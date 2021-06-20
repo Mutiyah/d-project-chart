@@ -10,6 +10,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { HomePageComponent } from './home-page/home-page.component';
 import { PlanetDetailsComponent } from './planet-details/planet-details.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { ChartComponent } from './chart/chart.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
     ProductDetailsComponent,
     HomePageComponent,
     PlanetDetailsComponent,
-    VehicleDetailsComponent
+    VehicleDetailsComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,

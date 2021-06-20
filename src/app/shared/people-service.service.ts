@@ -8,15 +8,19 @@ import { tap} from 'rxjs/operators';
   providedIn: 'root'
 })
 export class PeopleServiceService {
-  peopleApi : string = 'https://swapi.dev/api/people';
+  peopleApi : string = 'https://jsonplaceholder.typicode.com/photos/?_limit=15';
+  peopleResult! : any;
 
   constructor(private http : HttpClient) { }
 
   getPeople(): Observable<IPeople[]> {
-    return this.http.get<IPeople[]>(`${this.peopleApi}`)
+    return this.http.get<IPeople[]>(`${this.peopleApi}`);
   }
 
-  getPeopleDetails(): Observable<IPeople[]> {
-    return this.http.get<IPeople[]>(`${this.peopleApi}`)
-  }
+  // getPeopleDetails(){
+  //   return this.http.get(`${this.peopleApi}`).subscribe(data=>{
+  //       this.peopleResult = data;
+
+  //   })
+  // }
 }

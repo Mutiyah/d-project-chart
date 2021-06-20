@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Injectable, OnInit } from '@angular/core';
 import { IPlanet } from '../planet/planet';
 import {PlanetService} from '../shared/planet.service';
 
@@ -16,7 +16,7 @@ totalPlanets! : number;
   ngOnInit(): void {
       this.planetService.getPlanet().subscribe(
         (planetApiData: any) => {
-          this.planetData = planetApiData.results
+          this.planetData = planetApiData;
           // this.planetData = planetApiData
           this.totalPlanets = this.planetData.length;
           console.log(this.totalPlanets);

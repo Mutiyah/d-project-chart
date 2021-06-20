@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Injectable, OnInit } from '@angular/core';
 import { Subscriber } from 'rxjs';
 import {IPeople} from '../people/people';
 import {PeopleServiceService} from '../shared/people-service.service';
@@ -18,7 +18,7 @@ export class PeopleComponent implements OnInit {
   ngOnInit(): void {
       this.peopleService.getPeople().subscribe(
         (data : any) => {
-              this.peopleData = data.results
+              this.peopleData = data
               this.totalPeople = this.peopleData.length;
                console.log(this.totalPeople)
         }

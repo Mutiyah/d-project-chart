@@ -8,7 +8,9 @@ import {map, tap} from 'rxjs/operators';
   providedIn: 'root'
 })
 export class PlanetService {
-planetApi : string = "https://swapi.dev/api/planets";
+// planetApi : string = "https://swapi.dev/api/planets";
+planetApi : string = "https://jsonplaceholder.typicode.com/comments?_limit=10";
+
   constructor(private http: HttpClient) {}
 
   getPlanet() : Observable<IPlanet[]>{

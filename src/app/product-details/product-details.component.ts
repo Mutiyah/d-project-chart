@@ -29,8 +29,8 @@ planetId : any;
   ngOnInit(): void {
    this.personId = this.route.snapshot.paramMap.get('id');
   //  Get a particular person info
-    this.peopleService.getPeopleDetails().subscribe((data : any)=>{
-          this.people = data.results[this.personId];
+    this.peopleService.getPeople().subscribe((data : any)=>{
+          this.people = data[this.personId];
             console.log(this.people);
         })
 

@@ -22,7 +22,7 @@ export class PlanetDetailsComponent implements OnInit {
   this.planetId = this.route.snapshot.paramMap.get('num');
   this.planetService.getPlanet().subscribe(
     (data: any)=>{
-        this.planet = data.results[this.planetId]
+        this.planet = data[this.planetId]
         console.log(this.planet)
     }
   )

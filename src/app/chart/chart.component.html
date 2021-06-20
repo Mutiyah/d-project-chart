@@ -1,0 +1,31 @@
+<div class="container row" >
+  <div  class="col-md-10" ng-show="graph-visible">
+    <canvas id="pieChart" height="100"
+    width="100"
+    class="chart chart-bar"
+    chart-data="dataChart"
+    chart-labels="labels"
+    chart-click="onClick"
+    chart-options="options"
+
+    ></canvas>
+  </div>
+  <div class="col-md-2 chart-lables" >
+    <p><b>People  </b>{{" : " + totalPeoples}}</p>
+    <p><b>Planet  </b>{{" : " + totalPlanets}}</p>
+    <p><b>Vehicle  </b>{{" : " + totalVehicles}}</p>
+  </div>
+</div>
+
+
+<!-- <p><b>People : </b> {{ totalP}}</p>
+<p><b>Planet : </b>{{totalPl}}</p>
+<p><b>Vehicle : </b>{{totalV}}</p>
+ -->
+
+
+
+
+
+
+

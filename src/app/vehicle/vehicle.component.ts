@@ -1,13 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Injectable, OnInit } from '@angular/core';
 import { IVehicle } from  '../vehicle/vehicle';
 import {VehicleService} from '../shared/vehicle.service';
-import { Subscriber} from 'rxjs';
 
 
 @Component({
   selector: 'app-vehicle',
   templateUrl: './vehicle.component.html',
-  styleUrls: ['./vehicle.component.css']
+  styleUrls: ['./vehicle.component.css'],
+
 })
 export class VehicleComponent implements OnInit {
 vehicleData : IVehicle[] = [];

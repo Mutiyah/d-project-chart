@@ -7,7 +7,12 @@
     <table class="table table-hover table-bordered"  >
       <thead>
         <tr>
-          <th>NAME</th>
+          <th>ALBUM ID</th>
+          <th>ID</th>
+          <th>TITLE</th>
+          <th>URL</th>
+          <th>THUMBNAIL URL</th>
+          <!-- <th>NAME</th>
           <th>HEIGHT</th>
           <th>MASS</th>
           <th>HAIR COLOR</th>
@@ -22,12 +27,21 @@
           <th>STARSHIPS</th>
           <th>CREATED</th>
           <th>EDITED</th>
-          <th>URL</th>
+          <th>URL</th> -->
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let people of peopleData let i = index" [routerLink]="['/home', i]">
-          <td>{{people.name}}</td>
+          <td>{{people.albumId }}</td>
+          <td>{{people.id }}</td>
+          <td>{{people.title }}</td>
+          <td>{{people.url }}</td>
+          <td>{{people.thumbnailUrl }}</td>
+
+
+
+
+          <!--
           <td>{{people.height}}</td>
           <td>{{people.mass}}</td>
           <td>{{people.hair_color}}</td>
@@ -42,10 +56,11 @@
           <td>{{people.starships}}</td>
           <td>{{people.created}}</td>
           <td>{{people.edited}}</td>
-          <td>{{people.url}}</td>
+          <td>{{people.url}}</td> -->
         </tr>
       </tbody>
     </table>
+
     </div>
   </div>
 </div>

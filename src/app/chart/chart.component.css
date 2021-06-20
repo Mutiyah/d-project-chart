@@ -1,0 +1,19 @@
+canvas{
+  width: 70% !important;
+  height: auto !important;
+  margin: auto;
+}
+
+@media screen and (max-width: 800px){
+  canvas{
+    width: 100% !important;
+    height: auto !important;
+    margin: auto;
+  }
+
+  .chart-lables{
+    text-align: center;
+  }
+}
+
+

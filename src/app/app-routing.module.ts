@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+import { ChartComponent } from './chart/chart.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { PlanetDetailsComponent } from './planet-details/planet-details.component';
 import { PlanetComponent } from './planet/planet.component';
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path : 'planet/:num', component : PlanetDetailsComponent},
   {path : 'vehicle', component : VehicleComponent},
   {path : 'vehicle/:id', component : VehicleDetailsComponent},
+  {path: 'home', component: ChartComponent },
 
   {path: '', redirectTo: 'home', pathMatch : 'full' },
 ];
